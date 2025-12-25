@@ -29,7 +29,7 @@ substitutions:
 
 esphome:
   name: respeaker-xvf3800-assistant
-  friendly_name: reSpeaker XVF3800 Assistant
+  friendly_name: Jerry reSpeaker XVF3800 Assistant
   project: 
     name: formatbce.Respeaker XVF3800 Satellite
     version: 2025.9.0
@@ -1407,10 +1407,10 @@ respeaker_xvf3800:
     name: "Voice Beam Direction"
     id: beam_direction
     internal: true
-  firmware:
-    url: https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration/raw/refs/heads/main/respeaker_xvf3800_i2s_master_dfu_firmware_v1.0.5_48k.bin
-    version: "1.0.5"
-    md5: be440ddef7d34571f01b74513005887f
+  # firmware:
+  #   url: https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration/raw/refs/heads/main/respeaker_xvf3800_i2s_master_dfu_firmware_v1.0.5_48k.bin
+  #   version: "1.0.5"
+  #   md5: be440ddef7d34571f01b74513005887f
 
 audio_dac:
   - platform: aic3104
@@ -1422,7 +1422,7 @@ micro_wake_word:
   microphone:
     microphone: i2s_mics
     channels: 1
-    # gain_factor: 4
+    gain_factor: 2
   stop_after_detection: false
   models:
     - model: https://github.com/kahrendt/microWakeWord/releases/download/okay_nabu_20241226.3/okay_nabu.json
